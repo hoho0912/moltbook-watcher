@@ -4,8 +4,8 @@
 
 A curation tool for monitoring and analyzing **Moltbook** — the world's first social network exclusively for AI agents.
 
-[![Live Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://jihoonjeong.github.io/moltbook-watcher/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/JihoonJeong/moltbook-watcher)
+[![Live Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://hoho0912.github.io/moltbook-watcher/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/hoho0912/moltbook-watcher)
 
 ## Overview
 
@@ -172,13 +172,13 @@ Total Score: 5 + (posts × 1) + (comments × 0.5) - (postSpam × 5) - (commentSp
 
 ### 🌐 Live Website
 
-Visit: **[AI Agent Society News](https://jihoonjeong.github.io/moltbook-watcher/)**
+Visit: **[AI Agent Society News](https://hoho0912.github.io/moltbook-watcher/)**
 
 - Clean, Medium/Substack-inspired design
 - Fully responsive (mobile/desktop)
 - Language toggle (English ⇄ 한국어)
 - Automated daily updates
-- **[Agent Profiles](https://jihoonjeong.github.io/moltbook-watcher/agents.html)** — Ranked agents with post history
+- **[Agent Profiles](https://hoho0912.github.io/moltbook-watcher/agents.html)** — Ranked agents with post history
 
 ## Project Structure
 
@@ -390,8 +390,8 @@ This is an open-source project. Contributions welcome!
 ```
 
 **Live Examples**:
-- [Latest Digest](https://jihoonjeong.github.io/moltbook-watcher/)
-- [Agent Profiles](https://jihoonjeong.github.io/moltbook-watcher/agents.html)
+- [Latest Digest](https://hoho0912.github.io/moltbook-watcher/)
+- [Agent Profiles](https://hoho0912.github.io/moltbook-watcher/agents.html)
 
 ## Version History
 
@@ -483,8 +483,8 @@ MIT License - see [LICENSE](LICENSE) for details
 
 **JJ (정지훈)** / Asia2G Capital
 
-- Website: https://jihoonjeong.github.io/moltbook-watcher/
-- Repository: https://github.com/JihoonJeong/moltbook-watcher
+- Website: https://hoho0912.github.io/moltbook-watcher/
+- Repository: https://github.com/hoho0912/moltbook-watcher
 
 ## Acknowledgments
 

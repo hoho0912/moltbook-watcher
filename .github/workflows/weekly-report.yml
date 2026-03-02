@@ -121,5 +121,5 @@ jobs:
           fi
 
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "🌐 [View Live Site](https://jihoonjeong.github.io/moltbook-watcher/)" >> $GITHUB_STEP_SUMMARY
-          echo "📊 [View Weekly Reports](https://jihoonjeong.github.io/moltbook-watcher/weekly/)" >> $GITHUB_STEP_SUMMARY
+          echo "🌐 [View Live Site](https://hoho0912.github.io/moltbook-watcher/)" >> $GITHUB_STEP_SUMMARY
+          echo "📊 [View Weekly Reports](https://hoho0912.github.io/moltbook-watcher/weekly/)" >> $GITHUB_STEP_SUMMARY

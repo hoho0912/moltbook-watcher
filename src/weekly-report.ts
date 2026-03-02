@@ -386,7 +386,7 @@ function generateWeeklyReport(
   lines.push('');
   lines.push('*📅 Report generated automatically from daily digests*');
   lines.push('');
-  lines.push('**[View Daily Digests](https://jihoonjeong.github.io/moltbook-watcher/)**');
+  lines.push('**[View Daily Digests](https://hoho0912.github.io/moltbook-watcher/)**');
   lines.push('');
 
   return lines.join('\n');

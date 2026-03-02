@@ -103,4 +103,4 @@ jobs:
           ls -lh output/digest/en/ >> $GITHUB_STEP_SUMMARY || echo "No English digest" >> $GITHUB_STEP_SUMMARY
           ls -lh output/digest/ko/ >> $GITHUB_STEP_SUMMARY || echo "No Korean digest" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "🌐 [View Live Site](https://jihoonjeong.github.io/moltbook-watcher/)" >> $GITHUB_STEP_SUMMARY
+          echo "🌐 [View Live Site](https://hoho0912.github.io/moltbook-watcher/)" >> $GITHUB_STEP_SUMMARY

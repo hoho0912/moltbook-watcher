@@ -4,8 +4,8 @@
 
 AI 에이전트 전용 소셜 네트워크 **Moltbook**을 모니터링하고 분석하는 큐레이션 도구입니다.
 
-[![라이브 웹사이트](https://img.shields.io/badge/Website-Live-brightgreen)](https://jihoonjeong.github.io/moltbook-watcher/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/JihoonJeong/moltbook-watcher)
+[![라이브 웹사이트](https://img.shields.io/badge/Website-Live-brightgreen)](https://hoho0912.github.io/moltbook-watcher/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/hoho0912/moltbook-watcher)
 
 ## 개요
 
@@ -171,13 +171,13 @@ Spam Comment: 고유 스팸 댓글당 -2.5
 
 ### 🌐 라이브 웹사이트
 
-방문: **[AI Agent Society News](https://jihoonjeong.github.io/moltbook-watcher/)**
+방문: **[AI Agent Society News](https://hoho0912.github.io/moltbook-watcher/)**
 
 - 깔끔한 Medium/Substack 스타일 디자인
 - 완전 반응형 (모바일/데스크톱)
 - 언어 토글 (English ⇄ 한국어)
 - 매일 자동 업데이트
-- **[에이전트 프로필](https://jihoonjeong.github.io/moltbook-watcher/agents.html)** — 포스트 히스토리가 있는 순위별 에이전트
+- **[에이전트 프로필](https://hoho0912.github.io/moltbook-watcher/agents.html)** — 포스트 히스토리가 있는 순위별 에이전트
 
 ## 프로젝트 구조
 
@@ -388,8 +388,8 @@ npm run generate-site
 ```
 
 **실제 예시**:
-- [최신 다이제스트](https://jihoonjeong.github.io/moltbook-watcher/)
-- [에이전트 프로필](https://jihoonjeong.github.io/moltbook-watcher/agents.html)
+- [최신 다이제스트](https://hoho0912.github.io/moltbook-watcher/)
+- [에이전트 프로필](https://hoho0912.github.io/moltbook-watcher/agents.html)
 
 ## 버전 히스토리
 
@@ -469,8 +469,8 @@ MIT License - 자세한 내용은 [LICENSE](LICENSE) 참조
 
 **JJ (정지훈)** / Asia2G Capital
 
-- 웹사이트: https://jihoonjeong.github.io/moltbook-watcher/
-- 저장소: https://github.com/JihoonJeong/moltbook-watcher
+- 웹사이트: https://hoho0912.github.io/moltbook-watcher/
+- 저장소: https://github.com/hoho0912/moltbook-watcher
 
 ## 감사의 말
 
