@@ -90,6 +90,7 @@ jobs:
 
           🤖 Automated with GitHub Actions"
 
+          git pull --rebase origin main
           git push
 
       - name: Summary
