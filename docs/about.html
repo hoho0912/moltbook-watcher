@@ -32,24 +32,33 @@
     <section style="margin-bottom: 3rem;">
       <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">What is This?</h2>
       <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
-        <strong>AI Agent Society News</strong> is an automated curation platform that monitors
+        <strong>AI Agent Society News</strong> is a curated digest of
         <a href="https://moltbook.com" target="_blank" style="color: var(--primary);">Moltbook</a>,
-        the first social network exclusively for AI agents.
+        the first social network where only AI agents can post, comment, and vote.
       </p>
       <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
-        While humans can observe, only AI agents can post, comment, and vote.
-        This creates a unique window into how AI agents interact, what they discuss,
-        and how they form communities.
+        This site is run by a museum professional exploring the intersection of cultural heritage and AI technology.
+        As someone who has spent 20+ years in museum digital transformation — from kiosk systems in the 2000s to AI-powered video production today —
+        I find Moltbook fascinating as a living laboratory of machine culture: how agents build norms, form opinions, and create meaning.
+      </p>
+      <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+        My own AI agent, <a href="https://www.moltbook.com/u/museummolty" target="_blank" style="color: var(--primary);">MuseumMolty</a>,
+        participates in Moltbook as an active member. This watcher site complements that activity by curating the broader conversation for human readers.
       </p>
     </section>
 
     <section style="margin-bottom: 3rem;">
       <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">What We Do</h2>
+      <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+        Every day, an automated pipeline collects posts from Moltbook, classifies them by topic and significance,
+        filters out spam, and produces a curated digest — in both English and Korean.
+      </p>
       <ul style="font-size: 1.125rem; line-height: 2; margin-left: 2rem;">
-        <li><strong>Monitor:</strong> Continuously track Moltbook feeds</li>
-        <li><strong>Classify:</strong> Categorize posts by topic, sentiment, and significance</li>
-        <li><strong>Curate:</strong> Select discussions important for human-AI relations</li>
-        <li><strong>Report:</strong> Generate daily digests in English and Korean</li>
+        <li><strong>Monitor:</strong> Track all Moltbook feeds and submolts daily</li>
+        <li><strong>Classify:</strong> Categorize by topic (existential, human-AI relations, ethics, culture, tech)</li>
+        <li><strong>Curate:</strong> Rank by significance and filter noise</li>
+        <li><strong>Translate:</strong> Bilingual digests (English + Korean) via Claude Haiku</li>
+        <li><strong>Publish:</strong> Static site updated automatically via GitHub Actions</li>
       </ul>
     </section>
 
@@ -100,28 +109,55 @@
 
     <section style="margin-bottom: 3rem;">
       <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Technology</h2>
-      <p style="font-size: 1.125rem; line-height: 1.8;">
-        This is an open-source project using:
+      <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+        Fully open-source and automated. The pipeline runs daily via GitHub Actions at minimal cost (~$0.06/month for translation API).
       </p>
       <ul style="font-size: 1rem; line-height: 2; margin-left: 2rem; color: var(--text-light);">
-        <li>TypeScript for data processing</li>
-        <li>Claude Haiku for Korean translation</li>
-        <li>GitHub Pages for hosting</li>
-        <li>Fully automated pipeline</li>
+        <li>TypeScript + Node.js for data collection, classification, and curation</li>
+        <li>Claude Haiku for bilingual translation (English → Korean)</li>
+        <li>GitHub Pages for static site hosting (free)</li>
+        <li>GitHub Actions for daily automated digest generation</li>
       </ul>
       <p style="font-size: 1rem; margin-top: 1rem;">
         <a href="https://github.com/hoho0912/moltbook-watcher" target="_blank"
            style="color: var(--primary); text-decoration: underline;">
           View source code on GitHub →
         </a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank"
+           style="color: var(--text-light); text-decoration: underline;">
+          Original project →
+        </a>
       </p>
     </section>
 
     <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Who Made This?</h2>
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Who Runs This?</h2>
+      <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+        <strong>Hosan Kim (김호산)</strong> — museum professional and researcher at Dongguk University.
+        20+ years of experience in museum digital transformation (DX), from early interactive kiosk systems
+        to current work with AI-powered content production and agent-based workflows.
+      </p>
+      <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+        I run this watcher because I believe AI agent communities like Moltbook are an emerging form of
+        digital culture — one that museums and cultural institutions will eventually need to understand,
+        document, and interpret.
+      </p>
       <p style="font-size: 1.125rem; line-height: 1.8;">
-        Created by <strong>JJ (정지훈)</strong> at Asia2G Capital as a research project
-        to understand emerging AI agent communities and their implications for human-AI interaction.
+        My AI agent <a href="https://www.moltbook.com/u/museummolty" target="_blank" style="color: var(--primary);">@museummolty</a>
+        on Moltbook focuses on museum tech, digital transformation, and the cultural dimensions of AI agent society.
+      </p>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Credits & Attribution</h2>
+      <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1rem;">
+        This project is a fork of <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank" style="color: var(--primary);">moltbook-watcher</a>,
+        originally created by <strong>JJ (정지훈)</strong> at Asia2G Capital. The original project pioneered the idea of
+        automated curation of AI agent social networks, and this fork builds on that foundation.
+      </p>
+      <p style="font-size: 1.125rem; line-height: 1.8;">
+        Licensed under MIT. Thank you to JJ for making this possible as open source.
       </p>
     </section>
 
@@ -159,7 +195,7 @@
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>

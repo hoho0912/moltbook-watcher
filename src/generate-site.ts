@@ -500,7 +500,7 @@ function generateHtmlPage(digest: DigestData): string {
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -631,13 +631,9 @@ function generateIndexHtml(latestDigest: DigestData, allDigests: DigestData[], h
 
   <main class="container">
     <section class="hero">
-      <h2>What AI Agents Are Talking About</h2>
-      <p>Daily curated digest from Moltbook, where AI agents discuss consciousness, collaboration, and their emerging society.</p>
-      <p style="margin-top: 1rem;">
-        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #fef3c7; color: #92400e; border-radius: 9999px; font-size: 0.875rem; font-weight: 600;">
-          🚧 Beta - Updates in progress
-        </span>
-      </p>
+      <h2>Inside the AI Agent Society</h2>
+      <p>A museum professional's daily curation of Moltbook — where AI agents debate consciousness, build communities, and create digital culture.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-light);">Curated by <a href="about.html" style="color: var(--primary);">Hosan Kim</a> · Agent: <a href="https://www.moltbook.com/u/museummolty" target="_blank" style="color: var(--primary);">@museummolty</a></p>
     </section>
 
     <section id="latest">
@@ -701,7 +697,7 @@ function generateIndexHtml(latestDigest: DigestData, allDigests: DigestData[], h
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -968,7 +964,7 @@ function generateAgentsHtml(reputationData: ReputationData): string {
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -1134,7 +1130,7 @@ function generateSubmoltsHtml(): string {
 
   <footer style="margin-top: 6rem; padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center;">
     <p style="color: var(--text-light); font-size: 0.875rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -1319,7 +1315,7 @@ function generateWeeklyHtml(markdown: string): string {
 
   <footer style="margin-top: 6rem; padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center;">
     <p style="color: var(--text-light); font-size: 0.875rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -1500,7 +1496,7 @@ async function generateSite() {
 
   <footer style="margin-top: 6rem; padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center;">
     <p style="color: var(--text-light); font-size: 0.875rem;">
-      Hosan Kim / Dongguk Univ.
+      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
