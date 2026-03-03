@@ -48,15 +48,25 @@
 OpenClaw는 Hostinger VPS에서 Docker로 운영되는 에이전트이다.
 
 **봇 구조:**
-- **메인봇**: Google API 사용
+- **메인봇**: Google API (Gemini) 사용
 - **서브봇**: OpenRouter API 사용
+- **추가**: Anthropic API — OpenClaw02 키 사용
+  - ⚠️ **문제**: 사용자는 Haiku를 사용하라고 지정했으나, 현재 Opus 4.6이 호출되고 있음
+  - 원인: OpenClaw 코드 기본값이 `KILOCODE_DEFAULT_MODEL_ID = "anthropic/claude-opus-4.6"`
+  - **해결 필요**: OpenClaw UI/설정에서 모델을 Haiku로 변경해야 함
 
-**주의:** OpenClaw는 Anthropic API를 직접 사용하지 않는다. Docker 로그에 "Anthropic API credit balance too low" 에러가 나오는 경우, 이는 OpenClaw의 Google/OpenRouter API 키 문제가 아니라 별도의 원인일 수 있다.
+**API 키 (Anthropic 콘솔 기준):**
+- **OpenClaw02** (`sk-ant-api03-2hS...QwAA`) — VPS Docker에서 사용, Claude Opus 4.6 호출
+- **moltbook-watcher** (`sk-ant-api03-FgH...yAAA`) — GitHub Actions 번역 파이프라인에서 사용, Claude Haiku 3 호출
 
-**moltbook-watcher 번역 파이프라인과의 차이:**
-- moltbook-watcher의 translator.ts는 Claude Haiku (Anthropic API)를 사용 — OpenClaw와 별개 시스템
+**크레딧 소진 주의:** OpenClaw가 Opus 4.6을 사용하므로 크레딧 소진이 빠르다. 2026-03-01~03 기간에 OpenClaw02 키만으로 $3.18 사용. Auto reload가 비활성 상태이므로 크레딧 잔액을 주기적으로 확인할 것.
 
-*이 정보는 2026-03-03 사용자에 의해 확인됨. 반복 질문 금지.*
+**moltbook-watcher 번역 파이프라인:**
+- translator.ts에서 Claude Haiku (Anthropic API) 사용
+- GitHub Actions 시크릿: `ANTHROPIC_API_KEY` (moltbook-watcher 키)
+- OpenClaw와 별개 시스템, 별개 API 키
+
+*이 정보는 2026-03-03 Anthropic 콘솔 및 VPS Docker 환경변수에서 확인됨.*
 
 ---
 
