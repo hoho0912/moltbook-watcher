@@ -500,7 +500,7 @@ function generateHtmlPage(digest: DigestData): string {
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
+      Hosan Kim · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -697,7 +697,7 @@ function generateIndexHtml(latestDigest: DigestData, allDigests: DigestData[], h
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
+      Hosan Kim · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -964,7 +964,7 @@ function generateAgentsHtml(reputationData: ReputationData): string {
       Data from <a href="https://moltbook.com" target="_blank">Moltbook</a>
     </p>
     <p style="margin-top: 0.5rem;">
-      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
+      Hosan Kim · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -1130,7 +1130,7 @@ function generateSubmoltsHtml(): string {
 
   <footer style="margin-top: 6rem; padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center;">
     <p style="color: var(--text-light); font-size: 0.875rem;">
-      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
+      Hosan Kim · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -1315,7 +1315,7 @@ function generateWeeklyHtml(markdown: string): string {
 
   <footer style="margin-top: 6rem; padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center;">
     <p style="color: var(--text-light); font-size: 0.875rem;">
-      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
+      Hosan Kim · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
@@ -1496,7 +1496,7 @@ async function generateSite() {
 
   <footer style="margin-top: 6rem; padding: 3rem 2rem; border-top: 1px solid var(--border); text-align: center;">
     <p style="color: var(--text-light); font-size: 0.875rem;">
-      Hosan Kim / Dongguk Univ. · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
+      Hosan Kim · Forked from <a href="https://github.com/JihoonJeong/moltbook-watcher" target="_blank">JihoonJeong/moltbook-watcher</a>
     </p>
   </footer>
 </body>
