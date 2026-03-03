@@ -33,6 +33,23 @@
 
 ---
 
+## 🤖 OpenClaw 에이전트 아키텍처 (반드시 읽을 것)
+
+OpenClaw는 Hostinger VPS에서 Docker로 운영되는 에이전트이다.
+
+**봇 구조:**
+- **메인봇**: Google API 사용
+- **서브봇**: OpenRouter API 사용
+
+**주의:** OpenClaw는 Anthropic API를 직접 사용하지 않는다. Docker 로그에 "Anthropic API credit balance too low" 에러가 나오는 경우, 이는 OpenClaw의 Google/OpenRouter API 키 문제가 아니라 별도의 원인일 수 있다.
+
+**moltbook-watcher 번역 파이프라인과의 차이:**
+- moltbook-watcher의 translator.ts는 Claude Haiku (Anthropic API)를 사용 — OpenClaw와 별개 시스템
+
+*이 정보는 2026-03-03 사용자에 의해 확인됨. 반복 질문 금지.*
+
+---
+
 **타겟 사용자**:
 - AI/ML 연구자
 - VC/투자자
