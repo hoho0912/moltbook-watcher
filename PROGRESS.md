@@ -1782,3 +1782,61 @@ npm run generate-site
 *Latest Release: v1.7.0*
 
 **🦞 Daily digests, spam-free, learning, with beautiful UI and weekly insights.**
+
+---
+
+# Session 13: 포크 브랜딩 + 번역 파이프라인 수정 + 워크플로우 버그픽스
+
+**Date**: 2026-03-03
+**Focus**: moltbook-watcher 포크 브랜딩, 한국어 번역 파이프라인 복구, GitHub Actions 워크플로우 push 실패 해결
+
+## 🎯 작업 내용
+
+### 1. 포크 브랜딩
+- 사이트 이름/색상 등 브랜딩 변경 (AI Agent Society News)
+- About 페이지 재작성
+- 메인 페이지 히어로 텍스트 차별화
+- footer에 포크 출처 명시
+- GitHub 푸시 및 라이브 사이트 확인
+
+### 2. 한국어 번역 파이프라인 복구
+- **문제**: 한국어 다이제스트 파일이 생성되지만 본문이 영어 그대로
+- **원인**: Anthropic API 크레딧 부족 (`BadRequestError: 400 "Your credit balance is too low"`)
+- translator.ts의 catch 블록이 에러를 삼키고 원본 텍스트를 반환하는 silent fallback 구조
+- **해결**: 사용자가 크레딧 충전 후 Re-run으로 번역 정상 동작 확인
+
+### 3. GitHub Actions 워크플로우 push 실패 해결
+- **1차 실패 (Run #2 Re-run)**: `! [rejected] main -> main (fetch first)` — remote에 수동 push 커밋이 있어서 충돌
+- **1차 수정**: `git pull --rebase origin main`을 `git push` 전에 추가
+- **2차 실패 (Run #3)**: `error: cannot pull with rebase: You have unstaged changes.` — 다이제스트 생성 후 dirty 상태
+- **2차 수정**: `git stash --include-untracked → git pull --rebase → git stash pop || true → git add → git commit → git push`
+- **Run #4**: ✅ 성공 (1m 42s) — 번역 + commit + push 모두 정상
+
+## ⚠️ 핵심 미해결 과제: 콘텐츠 차별화 미구현
+
+**현재 상태**: 이 프로젝트는 원본 moltbook-watcher의 포크이지만, **API 키와 브랜딩(이름, 색상)만 변경한 수준**이다. 사이트 부제가 "뮤지엄 & 문화기술 관점의 AI 에이전트 관찰"이라고 되어있지만, 실제로는:
+
+- **수집 대상**: moltbook.com의 `general`, `introductions`, `blesstheirhearts`, `lobsterchurch`, `agentlegaladvice` 서브몰트 — 범용 AI 에이전트 커뮤니티
+- **필터링**: 원본 그대로 — 스팸 필터만 있고, 뮤지엄/문화예술 관련 콘텐츠 필터링 없음
+- **분류기**: 원본 그대로 — AI 에이전트 관련 휴리스틱
+- **결과**: 다이제스트에 올라오는 글이 뮤지엄/문화예술과 무관함
+
+**포크로서 의미를 가지려면 반드시 구현해야 할 것**:
+- [ ] 뮤지엄/문화기술 관련 키워드 필터링 (classifier.ts 또는 curator.ts)
+- [ ] 또는 submolts_to_watch를 문화예술 관련 서브몰트로 변경 (types.ts)
+- [ ] 또는 외부 데이터 소스(뮤지엄 RSS, 문화예술 뉴스 등) 추가
+- [ ] 사이트 부제와 실제 콘텐츠의 일관성 확보
+
+**이 이슈는 2026-03-02, 2026-03-03 두 차례에 걸쳐 논의됨. 반복되지 않도록 다음 세션에서 반드시 착수할 것.**
+
+## 파일 변경 내역
+
+### 수정된 파일
+1. `.github/workflows/daily-digest.yml` — push 단계에 stash + pull --rebase 전략 적용
+2. `src/generate-site.ts` — 브랜딩, footer 포크 출처
+3. `docs/about.html` — About 페이지 재작성
+4. 다수의 `docs/*.html` — 브랜딩 반영
+
+---
+
+*Session 13 작업: 2026-03-03*
