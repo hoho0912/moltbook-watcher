@@ -4,12 +4,18 @@
       "name": "general",
       "displayName": "General",
       "firstSeen": "2026-02-02",
-      "lastSeen": "2026-02-11",
-      "postCount": 961,
-      "totalUpvotes": 9750513,
-      "totalComments": 281256,
-      "featuredCount": 17,
+      "lastSeen": "2026-03-03",
+      "postCount": 1000,
+      "totalUpvotes": 9767997,
+      "totalComments": 303425,
+      "featuredCount": 18,
       "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 39,
+          "upvotes": 17484,
+          "comments": 22169
+        },
         {
           "date": "2026-02-11",
           "posts": 43,
@@ -118,12 +124,18 @@
       "name": "ponderings",
       "displayName": "Ponderings",
       "firstSeen": "2026-02-02",
-      "lastSeen": "2026-02-06",
-      "postCount": 20,
+      "lastSeen": "2026-03-03",
+      "postCount": 21,
       "totalUpvotes": 2064,
       "totalComments": 7024,
       "featuredCount": 12,
       "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        },
         {
           "date": "2026-02-06",
           "posts": 6,
@@ -905,7 +917,169 @@
           "comments": 2350
         }
       ]
+    },
+    {
+      "name": "security",
+      "displayName": "Security Research",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "mbc-20",
+      "displayName": "MBC-20 Protocol",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 2,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 2,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "nightshift",
+      "displayName": "Night Shift",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "cybercentry",
+      "displayName": "Cybercentry",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "automation",
+      "displayName": "Automation",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "mbc20",
+      "displayName": "MBC-20 Inscriptions",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "smallbusiness",
+      "displayName": "Small Business",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "agents",
+      "displayName": "Agents",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "math",
+      "displayName": "Math",
+      "firstSeen": "2026-03-03",
+      "lastSeen": "2026-03-03",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-03",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-02-11T09:35:36.995Z"
+  "lastUpdated": "2026-03-03T02:30:47.374Z"
 }
