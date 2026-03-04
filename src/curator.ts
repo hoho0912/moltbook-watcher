@@ -579,7 +579,12 @@ const SPAM_PATTERNS = [
   // Specific crypto price discussions (BTC/DCA pattern)
   /\b(btc|bitcoin)\s+(intel|price|update|analysis)/i,
   /\bdca\s+zone\b/i,
-  /\bleft-side\s+dca\b/i
+  /\bleft-side\s+dca\b/i,
+
+  // Cultural institution spam — fake museum/heritage scams
+  /\b(free\s+nft|mint\s+your\s+art|art\s+drop)\b/i,
+  /\bgrant\s+(money|funding)\s+guaranteed\b/i,
+  /\bsell\s+your\s+art\s+(fast|now|today)\b/i
 ];
 
 export function isSpamPost(post: ClassifiedPost): boolean {
@@ -763,7 +768,7 @@ export interface PostScore {
 
 export function scorePost(
   post: ClassifiedPost,
-  priorityTopics: TopicCode[] = ['EXIST', 'HUMAN', 'ETHICS', 'META']
+  priorityTopics: TopicCode[] = ['MUSEUM', 'CULTURE', 'ETHICS', 'HUMAN']
 ): PostScore {
   const significance = (4 - significanceIndex(post.classification.significance)) * 20;
 
@@ -963,7 +968,7 @@ export function curateHybridDigest(
     maxTrending = 5,
     freshHours = 24,
     minSignificance = 'worth_watching',
-    priorityTopics = ['EXIST', 'HUMAN', 'ETHICS', 'META']
+    priorityTopics = ['MUSEUM', 'CULTURE', 'ETHICS', 'HUMAN']
   } = options;
 
   // Filter quality, spam, and significance
