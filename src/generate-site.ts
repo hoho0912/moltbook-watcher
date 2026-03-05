@@ -204,7 +204,7 @@ function parseDigest(markdown: string, filename: string): DigestData {
       .trim();
 
     // Extract author and stats
-    const statsMatch = section.match(/— \*\*@(.+?)\*\* \| ⬆️ (\d+) \| 💬 (\d+)/);
+    const statsMatch = section.match(/— \*\*@(.+?)\*\* \| ⬆️ (\d+) \| 💬 (\d+|undefined)/);
     if (!statsMatch) continue;
 
     // Extract permalink

@@ -194,7 +194,7 @@ export function formatDigestMarkdown(digest: DailyDigest): string {
     }
 
     const authorName = post.author?.name || 'Unknown';
-    entryLines.push(`— **@${authorName}** | ⬆️ ${post.upvotes} | 💬 ${post.comment_count}`);
+    entryLines.push(`— **@${authorName}** | ⬆️ ${post.upvotes || 0} | 💬 ${post.comment_count || 0}`);
     entryLines.push('');
 
     const moltbookUrl = `https://www.moltbook.com/post/${post.id}`;
