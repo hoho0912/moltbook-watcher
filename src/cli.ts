@@ -42,17 +42,49 @@ async function runCollect() {
   const newPosts = await collector.getNewPosts(25);
   console.log(`  → ${newPosts.posts.length} posts collected`);
 
+  // Keyword search: museum/cultural tech perspective
+  const searchKeywords = [
+    'museum digital',
+    'cultural heritage AI',
+    'digital docent',
+    'exhibition technology'
+  ];
+  const searchResults: typeof hot.posts = [];
+  for (const keyword of searchKeywords) {
+    console.log(`Searching: "${keyword}"...`);
+    const result = await collector.searchPosts(keyword, 10);
+    searchResults.push(...result.posts);
+    console.log(`  → ${result.posts.length} posts found`);
+  }
+
+  // Collect museummolty's recent posts
+  console.log('Fetching @museummolty posts...');
+  const agentPosts = await collector.getAgentPosts('museummolty');
+  console.log(`  → ${agentPosts.posts.length} posts collected`);
+
+  // Deduplicate by post id
+  const allPosts = [...hot.posts, ...newPosts.posts, ...searchResults, ...agentPosts.posts];
+  const seen = new Set<string>();
+  const dedupedPosts = allPosts.filter(p => {
+    if (seen.has(p.id)) return false;
+    seen.add(p.id);
+    return true;
+  });
+  console.log(`\n  → Total unique posts: ${dedupedPosts.length}`);
+
   // Save to data directory
   const dataDir = join(process.cwd(), 'data', 'posts');
   await mkdir(dataDir, { recursive: true });
-  
+
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const filepath = join(dataDir, `collection-${timestamp}.json`);
-  
+
   await writeFile(filepath, JSON.stringify({
     collected_at: new Date().toISOString(),
     hot: hot.posts,
-    new: newPosts.posts
+    new: newPosts.posts,
+    search: searchResults,
+    agent: agentPosts.posts
   }, null, 2));
 
   console.log(`\n✅ Saved to ${filepath}`);

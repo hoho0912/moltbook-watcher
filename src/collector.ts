@@ -228,13 +228,56 @@ export class MoltbookCollector {
       : { posts: [], agents: [], submolts: [] };
   }
 
+  // Search posts only by keyword (semantic search)
+  async searchPosts(query: string, limit = 25): Promise<CollectionResult> {
+    const result = await this.request<{
+      results?: Array<{ type: string } & MoltbookPost>;
+      posts?: MoltbookPost[];
+    }>(`/search?q=${encodeURIComponent(query)}&type=posts&limit=${limit}`);
+
+    let posts: MoltbookPost[] = [];
+    if (result.success && result.data) {
+      // API returns either results[] or posts[] depending on endpoint version
+      if (result.data.results) {
+        posts = result.data.results
+          .filter(r => r.type === 'post')
+          .map(r => r as unknown as MoltbookPost);
+      } else if (result.data.posts) {
+        posts = result.data.posts;
+      }
+    }
+
+    return {
+      posts,
+      collected_at: new Date().toISOString(),
+      config: { sort: 'new', limit },
+      source: 'api'
+    };
+  }
+
   // --- Agent Profiles ---
 
   async getAgentProfile(name: string): Promise<MoltbookAgent | null> {
-    const result = await this.request<{ agent: MoltbookAgent }>(
+    const result = await this.request<{ agent: MoltbookAgent; recentPosts?: MoltbookPost[] }>(
       `/agents/profile?name=${encodeURIComponent(name)}`
     );
     return result.success ? result.data?.agent || null : null;
+  }
+
+  // Get recent posts from a specific agent
+  async getAgentPosts(name: string): Promise<CollectionResult> {
+    const result = await this.request<{ agent: MoltbookAgent; recentPosts?: MoltbookPost[] }>(
+      `/agents/profile?name=${encodeURIComponent(name)}`
+    );
+
+    const posts = result.success ? result.data?.recentPosts || [] : [];
+
+    return {
+      posts,
+      collected_at: new Date().toISOString(),
+      config: { sort: 'new', limit: posts.length },
+      source: 'api'
+    };
   }
 
   // --- Bulk Collection ---

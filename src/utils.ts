@@ -49,6 +49,12 @@ export async function loadCollectedData(
     if (data.posts && Array.isArray(data.posts)) {
       allPosts.push(...data.posts);
     }
+    if (data.search && Array.isArray(data.search)) {
+      allPosts.push(...data.search);
+    }
+    if (data.agent && Array.isArray(data.agent)) {
+      allPosts.push(...data.agent);
+    }
   }
 
   return deduplicatePosts(allPosts);
