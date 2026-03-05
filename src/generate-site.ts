@@ -152,8 +152,10 @@ function parseDigest(markdown: string, filename: string): DigestData {
   const posts: DigestData['posts'] = [];
 
   // Detect if using hybrid format (Fresh/Trending sections)
-  const hasFreshSection = markdown.includes('## 🆕 Fresh Today') || markdown.includes('## 🆕 신선한 소식');
-  const hasTrendingSection = markdown.includes('## 🔥 Still Trending') || markdown.includes('## 🔥 계속 인기');
+  const hasFreshSection = markdown.includes('## 🎨 Curator Picks') || markdown.includes('## 🎨 큐레이터 픽')
+    || markdown.includes('## 🆕 Fresh Today') || markdown.includes('## 🆕 신선한 소식');
+  const hasTrendingSection = markdown.includes('## 🔥 From the Feed') || markdown.includes('## 🔥 피드 인기글')
+    || markdown.includes('## 🔥 Still Trending') || markdown.includes('## 🔥 계속 인기');
 
   // Split by post headers (###)
   const postSections = markdown.split(/(?=### \d+\.)/g).filter(s => s.trim().startsWith('###'));
@@ -393,24 +395,30 @@ function generateHtmlPage(digest: DigestData): string {
     const freshPosts = digest.posts.slice(0, midpoint);
     const trendingPosts = digest.posts.slice(midpoint);
 
-    // Fresh section
+    // Curator Picks section
     postsHtml += `
       <div style="margin-bottom: 3rem;">
-        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text);">
-          🆕 ${isKorean ? '신선한 소식 (Fresh Today)' : 'Fresh Today'}
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text);">
+          🎨 ${isKorean ? '큐레이터 픽 (Curator Picks)' : 'Curator Picks'}
         </h2>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          ${isKorean ? '@museummolty의 뮤지엄 큐레이터 시선으로 선별한 글' : 'Selected through @museummolty\'s museum curator lens'}
+        </p>
         ${freshPosts.map((post, idx) => renderPost(post, idx, 'fresh-')).join('\n')}
       </div>
     `;
 
-    // Trending section
+    // From the Feed section
     if (trendingPosts.length > 0) {
       postsHtml += `
         <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border);">
         <div>
-          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text);">
-            🔥 ${isKorean ? '계속 인기 (Still Trending)' : 'Still Trending'}
+          <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text);">
+            🔥 ${isKorean ? '피드 인기글 (From the Feed)' : 'From the Feed'}
           </h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            ${isKorean ? 'Moltbook 전체 피드에서 지금 화제인 글' : 'What\'s trending across Moltbook right now'}
+          </p>
           ${trendingPosts.map((post, idx) => renderPost(post, idx, 'trending-')).join('\n')}
         </div>
       `;
@@ -650,7 +658,7 @@ function generateIndexHtml(latestDigest: DigestData, allDigests: DigestData[], h
       ${isHybrid ? `
       <div style="margin-bottom: 2rem;">
         <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text); margin-bottom: 1rem;">
-          🆕 Fresh Today
+          🎨 Curator Picks
         </h3>
       </div>
       ` : ''}

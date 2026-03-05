@@ -236,12 +236,12 @@ export function formatDigestMarkdown(digest: DailyDigest): string {
     return entryLines;
   };
 
-  // Fresh Posts Section
+  // Curator Picks Section
   if (digest.fresh_entries.length > 0) {
     if (isKorean) {
-      lines.push('## 🆕 신선한 소식 (Fresh Today)');
+      lines.push('## 🎨 큐레이터 픽 (Curator Picks)');
     } else {
-      lines.push('## 🆕 Fresh Today');
+      lines.push('## 🎨 Curator Picks');
     }
     lines.push('');
 
@@ -250,14 +250,14 @@ export function formatDigestMarkdown(digest: DailyDigest): string {
     });
   }
 
-  // Trending Posts Section
+  // From the Feed Section
   if (digest.trending_entries.length > 0) {
     lines.push('---');
     lines.push('');
     if (isKorean) {
-      lines.push('## 🔥 계속 인기 (Still Trending)');
+      lines.push('## 🔥 피드 인기글 (From the Feed)');
     } else {
-      lines.push('## 🔥 Still Trending');
+      lines.push('## 🔥 From the Feed');
     }
     lines.push('');
 

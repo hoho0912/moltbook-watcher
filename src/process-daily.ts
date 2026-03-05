@@ -78,18 +78,32 @@ async function processDailyDigest(options: ProcessOptions = {}) {
   console.log(`  → Filtered out ${filtered} low-quality posts (emoji-only, too short, etc.)`);
   console.log(`  → ${qualityPosts.length} quality posts remaining`);
 
-  // 5. Hybrid curation (Fresh + Trending)
-  console.log('\n🆕 Curating hybrid digest (Fresh + Trending)...');
-  const { fresh, trending } = curateHybridDigest(qualityPosts, {
-    maxFresh: Math.ceil(limit / 2),       // Half for fresh
-    maxTrending: Math.floor(limit / 2),   // Half for trending
-    freshHours: 24
-  });
+  // 5. 소스별 분리: Curator Picks (search+agent) / From the Feed (hot+new)
+  console.log('\n🎨 Curating by source...');
 
-  console.log(`  → ${fresh.length} fresh posts (24h or less)`);
-  console.log(`  → ${trending.length} trending posts (older but popular)`);
+  const curatorSourcePosts = qualityPosts.filter(
+    p => p.feedSource === 'search' || p.feedSource === 'agent'
+  );
+  const feedSourcePosts = qualityPosts.filter(
+    p => p.feedSource === 'hot' || p.feedSource === 'new' || !p.feedSource
+  );
 
-  // Quality check: Skip digest if not enough quality posts
+  console.log(`  → Curator source (search+agent): ${curatorSourcePosts.length} posts`);
+  console.log(`  → Feed source (hot+new): ${feedSourcePosts.length} posts`);
+
+  // Curator Picks: 큐레이터 관점 기준으로 랭킹 (최대 5개)
+  const rankedCurator = rankPosts(curatorSourcePosts).slice(0, Math.ceil(limit / 2));
+  // From the Feed: 인기순 랭킹 (최대 5개)
+  const rankedFeed = rankPosts(feedSourcePosts).slice(0, Math.floor(limit / 2));
+
+  // fresh/trending 변수명 재사용 (reporter 호환)
+  const fresh = rankedCurator;
+  const trending = rankedFeed;
+
+  console.log(`  → Curator Picks: ${fresh.length} posts`);
+  console.log(`  → From the Feed: ${trending.length} posts`);
+
+  // Quality check
   const totalPosts = fresh.length + trending.length;
   if (totalPosts < 1) {
     console.log(`\n⚠️  Not enough quality posts (${totalPosts}) - skipping digest generation`);
@@ -98,21 +112,19 @@ async function processDailyDigest(options: ProcessOptions = {}) {
     return;
   }
 
-  // Show top posts from each section
-  console.log('\n  🆕 Top Fresh:');
+  // Show top picks
+  console.log('\n  🎨 Top Curator Picks:');
   for (let i = 0; i < Math.min(3, fresh.length); i++) {
     const { post, score } = fresh[i];
-    const age = ((Date.now() - new Date(post.created_at).getTime()) / (1000 * 60 * 60)).toFixed(1);
-    console.log(`    ${i + 1}. [${score.toFixed(1)}] ${post.title.slice(0, 50)}... (${age}h old)`);
+    console.log(`    ${i + 1}. [${score.toFixed(1)}] ${post.title.slice(0, 50)}... (source: ${post.feedSource})`);
     console.log(`       Topic: ${post.classification.topic}, Sig: ${post.classification.significance}`);
   }
 
   if (trending.length > 0) {
-    console.log('\n  🔥 Top Trending:');
+    console.log('\n  🔥 Top From the Feed:');
     for (let i = 0; i < Math.min(3, trending.length); i++) {
       const { post, score } = trending[i];
-      const age = ((Date.now() - new Date(post.created_at).getTime()) / (1000 * 60 * 60)).toFixed(1);
-      console.log(`    ${i + 1}. [${score.toFixed(1)}] ${post.title.slice(0, 50)}... (${age}h old)`);
+      console.log(`    ${i + 1}. [${score.toFixed(1)}] ${post.title.slice(0, 50)}... (source: ${post.feedSource})`);
       console.log(`       Topic: ${post.classification.topic}, Sig: ${post.classification.significance}`);
     }
   }

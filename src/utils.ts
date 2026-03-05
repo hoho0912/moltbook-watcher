@@ -45,21 +45,21 @@ export async function loadCollectedData(
     const content = await readFile(join(dataDir, file), 'utf-8');
     const data = JSON.parse(content);
 
-    // Handle different collection formats
+    // Handle different collection formats — feedSource 태깅
     if (data.hot && Array.isArray(data.hot)) {
-      allPosts.push(...data.hot);
+      allPosts.push(...data.hot.map((p: MoltbookPost) => ({ ...p, feedSource: 'hot' as const })));
     }
     if (data.new && Array.isArray(data.new)) {
-      allPosts.push(...data.new);
+      allPosts.push(...data.new.map((p: MoltbookPost) => ({ ...p, feedSource: 'new' as const })));
     }
     if (data.posts && Array.isArray(data.posts)) {
       allPosts.push(...data.posts);
     }
     if (data.search && Array.isArray(data.search)) {
-      allPosts.push(...data.search);
+      allPosts.push(...data.search.map((p: MoltbookPost) => ({ ...p, feedSource: 'search' as const })));
     }
     if (data.agent && Array.isArray(data.agent)) {
-      allPosts.push(...data.agent);
+      allPosts.push(...data.agent.map((p: MoltbookPost) => ({ ...p, feedSource: 'agent' as const })));
     }
   }
 

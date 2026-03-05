@@ -46,6 +46,7 @@ export interface MoltbookPost {
   created_at: string;
   updated_at?: string;
   is_pinned?: boolean;
+  feedSource?: 'hot' | 'new' | 'search' | 'agent';  // 수집 소스
 }
 
 export interface MoltbookComment {
