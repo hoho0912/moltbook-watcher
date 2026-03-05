@@ -26,12 +26,18 @@ export function deduplicatePosts<T extends MoltbookPost>(posts: T[]): T[] {
 
 export async function loadCollectedData(
   dataDir: string,
-  pattern?: RegExp
+  pattern?: RegExp,
+  collectedOnDate?: Date  // 수집 파일 날짜 기준 필터 (파일명 기준)
 ): Promise<MoltbookPost[]> {
   const files = await readdir(dataDir);
-  const jsonFiles = files.filter(f =>
-    f.endsWith('.json') && (!pattern || pattern.test(f))
-  );
+
+  // 수집 파일 날짜 필터: 파일명에 날짜가 포함된 경우 그 날짜 기준으로 필터
+  let filteredFiles = files.filter(f => f.endsWith('.json') && (!pattern || pattern.test(f)));
+  if (collectedOnDate) {
+    const dateStr = collectedOnDate.toISOString().split('T')[0]; // YYYY-MM-DD
+    filteredFiles = filteredFiles.filter(f => f.includes(dateStr));
+  }
+  const jsonFiles = filteredFiles;
 
   const allPosts: MoltbookPost[] = [];
 

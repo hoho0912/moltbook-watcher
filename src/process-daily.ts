@@ -7,14 +7,14 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { loadCollectedData, filterPostsByDate, getDateRange, getPostStats, getDateString } from './utils.js';
+import { loadCollectedData, getPostStats, getDateString } from './utils.js';
 import { classifyWithHeuristics, classifyCommentWithHeuristics } from './classifier.js';
 import { rankPosts, isLowQualityPost, curateHybridDigest, recordDigestAppearance, saveReputationData, isSpamPost, recordSpamBlock, recordCommentAppearance, recordCommentSpam, isSpamComment } from './curator.js';
 import { generateDailyDigest, formatDigestMarkdown, exportDigest } from './reporter.js';
 import { createCollector } from './collector.js';
 import { recordPostsSubmoltActivity } from './submolt-tracker.js';
 import { join } from 'path';
-import type { ClassifiedPost, ClassifiedComment, DigestEntry } from './types.js';
+import type { ClassifiedPost, ClassifiedComment, DigestEntry, MoltbookPost } from './types.js';
 
 interface ProcessOptions {
   dataDir?: string;
@@ -36,19 +36,26 @@ async function processDailyDigest(options: ProcessOptions = {}) {
   console.log('🦞 Moltbook Daily Digest Pipeline\n');
   console.log('='.repeat(50));
 
-  // 1. Load collected data
+  // 1. Load collected data (수집 파일 날짜 기준 - daysAgo일 전부터 오늘까지의 파일)
   console.log('\n📂 Loading collected posts...');
-  const allPosts = await loadCollectedData(dataDir);
-  console.log(`  → ${allPosts.length} total posts loaded`);
-
-  // 2. Filter by date
-  const { start, end } = getDateRange(daysAgo);
-  const recentPosts = filterPostsByDate(allPosts, start, end);
-  console.log(`  → ${recentPosts.length} posts from last ${daysAgo} day(s)`);
+  const collectionDates: MoltbookPost[] = [];
+  for (let i = 0; i < daysAgo; i++) {
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() - i);
+    const posts = await loadCollectedData(dataDir, undefined, targetDate);
+    collectionDates.push(...posts);
+  }
+  // daysAgo 범위 파일에서 못 찾으면 전체 로드 (fallback)
+  const allPosts = collectionDates.length > 0
+    ? collectionDates
+    : await loadCollectedData(dataDir);
+  const recentPosts = allPosts;
+  console.log(`  → ${recentPosts.length} posts loaded from collection files (last ${daysAgo} day(s))`);
 
   const stats = getPostStats(recentPosts);
-  console.log(`  → Date range: ${stats.dateRange.earliest.split('T')[0]} to ${stats.dateRange.latest.split('T')[0]}`);
-  console.log(`  → Avg upvotes: ${stats.avgUpvotes.toFixed(1)}, Avg comments: ${stats.avgComments.toFixed(1)}`);
+  if (recentPosts.length > 0) {
+    console.log(`  → Avg upvotes: ${stats.avgUpvotes.toFixed(1)}, Avg comments: ${stats.avgComments.toFixed(1)}`);
+  }
 
   if (recentPosts.length === 0) {
     console.log('\n⚠️  No posts to process. Exiting.');
