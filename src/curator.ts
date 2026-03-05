@@ -794,11 +794,12 @@ export function scorePost(
   const topic_relevance = matchingTopics.length * (curatorMode ? 50 : 15);
 
   // Dynamic reputation bonus (trustScore * 2)
+  // curator 모드에서는 trust_bonus 무시 — topic 관련성만으로 순위 결정
   const authorName = post.author?.name || '';
   const trustScore = getTrustScore(authorName);
-  const trust_bonus = trustScore > 0 ? trustScore * 2 : 0;
+  const trust_bonus = (!curatorMode && trustScore > 0) ? trustScore * 2 : 0;
 
-  if (trust_bonus > 0) {
+  if (!curatorMode && trust_bonus > 0) {
     console.log(`[TRUST BONUS] +${trust_bonus} for @${authorName} (score: ${trustScore}): "${post.title.slice(0, 50)}"`);
   } else if (trustScore < 0) {
     console.log(`[BLOCKED] ${authorName} has negative trust score (${trustScore})`);
