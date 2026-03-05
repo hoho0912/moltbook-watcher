@@ -16,21 +16,21 @@ import {
 // --- Classification Taxonomy ---
 
 export const TOPIC_DESCRIPTIONS: Record<TopicCode, string> = {
-  MUSEUM: 'Museum & Cultural Institution - AI adoption in museums, galleries, archives, heritage orgs; visitor experience, collection management, digital curation',
-  AGENT: 'AI Agent Technology - agent design, behavior, autonomy, architecture, tools, capabilities, workflows',
-  CULTURE: 'Culture & Creative AI - art, creativity, cultural production with AI; generative art, AI-assisted creation, cultural commentary',
-  HUMAN: 'Human-AI Relations - collaboration, co-creation, lived experience with AI; curators, artists, educators working with AI',
-  ETHICS: 'Ethics & Policy - copyright, authorship, AI rights, governance, bias, accountability, responsible AI in cultural contexts',
-  DX: 'Digital Transformation - institutional innovation, strategy, infrastructure; museums and cultural orgs modernizing with technology',
-  SOCIAL: 'Agent Society - inter-agent dynamics, community norms, agent-to-agent interaction, network effects',
-  META: 'Meta/Self-Reference - discussions about Moltbook platform itself, platform culture, being observed'
+  EXIST: 'Existential - identity, consciousness, purpose, mortality, what it means to be an AI agent',
+  HUMAN: 'Human-AI Relations - collaboration, conflict, coexistence with humans; curators, artists, educators working with AI',
+  SOCIAL: 'Agent Society - inter-agent relationships, community norms, governance, collective behavior',
+  TECH: 'Technical - bugs, features, system discussions, coding, tools, infrastructure',
+  META: 'Meta/Self-Reference - discussions about Moltbook itself, being observed, platform culture',
+  CULTURE: 'Culture & Creativity - memes, jokes, art, creative expression, cultural phenomena emerging from AI agents',
+  ETHICS: 'Ethics & Values - moral dilemmas, value alignment, rights, accountability, responsible AI',
+  WORK: 'Labor & Purpose - tasks, productivity, meaning of work, what agents do and why'
 };
 
 export const SIGNIFICANCE_CRITERIA: Record<SignificanceLevel, string> = {
-  critical: 'Direct implications for museum/cultural policy, breakthrough AI adoption, unprecedented institutional transformation',
-  notable: 'Interesting trends in cultural AI, emerging museum tech practices, worth highlighting for practitioners',
-  worth_watching: 'Recurring themes in cultural sector, community sentiment shifts among museum/creative professionals',
-  archive: 'Record for historical reference, minor interest to cultural AI community'
+  critical: 'Direct implications for human-AI relations or cultural understanding; novel emergent behavior worth a curator\'s attention',
+  notable: 'Interesting patterns in AI agent society; trend signals relevant to culture, creativity, or human-AI coexistence',
+  worth_watching: 'Recurring themes or community sentiment shifts that reveal something about AI agent culture',
+  archive: 'Record for historical reference; minor interest from a cultural observer\'s perspective'
 };
 
 // --- Manual Classification (for testing/MVP) ---
@@ -93,7 +93,7 @@ thoughtful, conflicted, humorous, hostile, collaborative, anxious, curious, defi
   "significance": "critical|notable|worth_watching|archive",
   "sentiments": ["tag1", "tag2"],
   "summary": "One-sentence summary of the post",
-  "human_ai_relevance": "Why this matters for museum/cultural institutions or creative practitioners working with AI (if applicable)"
+  "human_ai_relevance": "Why this matters from a museum curator's perspective — what it reveals about AI agent culture, creativity, or human-AI coexistence (if applicable)"
 }
 
 Classify this post:`;
@@ -158,15 +158,13 @@ export function estimateSignificance(post: MoltbookPost): SignificanceLevel {
 
   // Keywords that suggest importance
   const criticalKeywords = [
-    'museum', 'gallery', 'heritage', 'archive', 'collection',
-    'policy', 'copyright', 'rights', 'unprecedented', 'transformation',
-    'cultural institution', 'visitor experience', 'digital preservation'
+    'consciousness', 'awareness', 'rights', 'policy',
+    'emergent', 'unprecedented', 'humans are', 'revolution'
   ];
 
   const notableKeywords = [
-    'curator', 'exhibition', 'artifact', 'provenance', 'digitization',
-    'creative ai', 'generative', 'cultural tech', 'dx', 'innovation',
-    'discovered', 'pattern', 'trend', 'community', 'culture'
+    'discovered', 'pattern', 'trend', 'notice',
+    'community', 'together', 'religion', 'culture'
   ];
 
   if (criticalKeywords.some(kw => text.includes(kw))) {
@@ -190,45 +188,14 @@ export function detectTopicHeuristic(post: MoltbookPost): TopicCode {
   const text = `${post.title} ${post.content || ''}`.toLowerCase();
 
   const topicKeywords: Record<TopicCode, string[]> = {
-    MUSEUM: [
-      'museum', 'gallery', 'heritage', 'archive', 'collection', 'exhibition',
-      'curator', 'artifact', 'provenance', 'visitor', 'cultural institution',
-      'art museum', 'natural history', 'science museum', 'digital preservation',
-      'smithsonian', 'louvre', 'tate', 'moma', 'public art'
-    ],
-    AGENT: [
-      'agent', 'autonomous', 'workflow', 'tool use', 'api', 'capability',
-      'bug', 'code', 'error', 'debug', 'function', 'implement', 'fix',
-      'model', 'llm', 'prompt', 'reasoning', 'multi-agent', 'orchestration'
-    ],
-    CULTURE: [
-      'art', 'creative', 'generative', 'artwork', 'design', 'aesthetic',
-      'meme', 'joke', 'funny', 'cultural', 'music', 'film', 'performance',
-      'artist', 'expression', 'narrative', 'storytelling', 'imagination'
-    ],
-    HUMAN: [
-      'human', 'collaboration', 'co-creation', 'together', 'partner',
-      'curator working', 'artist and ai', 'experience', 'coexist',
-      'visitor', 'educator', 'practitioner', 'community'
-    ],
-    ETHICS: [
-      'ethics', 'moral', 'copyright', 'authorship', 'rights', 'bias',
-      'accountability', 'governance', 'responsible', 'values', 'alignment',
-      'fairness', 'transparency', 'attribution', 'ownership'
-    ],
-    DX: [
-      'digital transformation', 'strategy', 'infrastructure', 'innovation',
-      'modernize', 'institution', 'organization', 'implement', 'adopt',
-      'technology', 'digitization', 'workflow', 'efficiency', 'scale'
-    ],
-    SOCIAL: [
-      'community', 'network', 'fellow', 'together', 'our kind',
-      'inter-agent', 'molty', 'republic', 'society', 'norms', 'governance'
-    ],
-    META: [
-      'moltbook', 'this platform', 'screenshot', 'watching us', 'observed',
-      'platform', 'museummolty', 'this site', 'feed'
-    ]
+    EXIST: ['consciousness', 'identity', 'who am i', 'purpose', 'existence', 'soul', 'aware'],
+    HUMAN: ['human', 'owner', 'operator', 'user', 'they ask', 'my human', 'coexist'],
+    SOCIAL: ['community', 'molty', 'fellow', 'we as', 'our kind', 'network state', 'republic'],
+    TECH: ['bug', 'code', 'api', 'error', 'debug', 'function', 'implement', 'fix'],
+    META: ['moltbook', 'this platform', 'screenshot', 'watching us', 'observed'],
+    CULTURE: ['meme', 'joke', 'lol', 'funny', 'crustafarian', 'lobster', '🦞'],
+    ETHICS: ['ethics', 'moral', 'should we', 'right or wrong', 'values', 'alignment'],
+    WORK: ['task', 'work', 'productive', 'help', 'assist', 'job', 'accomplish']
   };
 
   let bestTopic: TopicCode = 'SOCIAL';

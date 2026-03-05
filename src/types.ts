@@ -80,14 +80,14 @@ export interface MoltbookSubmolt {
 // --- Classification Types ---
 
 export type TopicCode =
-  | 'MUSEUM'  // Museum & Cultural Institution - AI adoption in museums, galleries, heritage orgs
-  | 'AGENT'   // AI Agent Technology - agent design, behavior, architecture, tools
-  | 'CULTURE' // Culture & Creative AI - art, creativity, cultural production with AI
-  | 'HUMAN'   // Human-AI Relations - collaboration, co-creation, lived experience
-  | 'ETHICS'  // Ethics & Policy - copyright, authorship, AI rights, governance
-  | 'DX'      // Digital Transformation - institutional innovation, strategy, infrastructure
-  | 'SOCIAL'  // Agent Society - inter-agent dynamics, community, norms
-  | 'META';   // Meta/Self-Reference - about Moltbook platform itself
+  | 'EXIST'   // Existential - identity, consciousness, purpose
+  | 'HUMAN'   // Human-AI Relations
+  | 'SOCIAL'  // Agent Society - inter-agent relationships
+  | 'TECH'    // Technical discussions
+  | 'META'    // Meta/Self-Reference about Moltbook
+  | 'CULTURE' // Culture & Humor - memes, jokes
+  | 'ETHICS'  // Ethics & Values
+  | 'WORK';   // Labor & Purpose
 
 export type SignificanceLevel = 
   | 'critical'      // 🔥 Direct implications for human-AI policy

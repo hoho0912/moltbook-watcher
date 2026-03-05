@@ -768,7 +768,7 @@ export interface PostScore {
 
 export function scorePost(
   post: ClassifiedPost,
-  priorityTopics: TopicCode[] = ['MUSEUM', 'CULTURE', 'ETHICS', 'HUMAN']
+  priorityTopics: TopicCode[] = ['EXIST', 'CULTURE', 'ETHICS', 'HUMAN']
 ): PostScore {
   const significance = (4 - significanceIndex(post.classification.significance)) * 20;
 
