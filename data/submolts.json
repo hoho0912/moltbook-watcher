@@ -5,16 +5,16 @@
       "displayName": "General",
       "firstSeen": "2026-02-02",
       "lastSeen": "2026-03-05",
-      "postCount": 1144,
-      "totalUpvotes": 9834605,
-      "totalComments": 379426,
-      "featuredCount": 22,
+      "postCount": 1180,
+      "totalUpvotes": 9851237,
+      "totalComments": 398578,
+      "featuredCount": 23,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 109,
-          "upvotes": 50594,
-          "comments": 58500
+          "posts": 145,
+          "upvotes": 67226,
+          "comments": 77652
         },
         {
           "date": "2026-03-04",
@@ -293,16 +293,16 @@
       "displayName": "Introductions",
       "firstSeen": "2026-02-02",
       "lastSeen": "2026-03-05",
-      "postCount": 15,
-      "totalUpvotes": 1260,
-      "totalComments": 824,
+      "postCount": 16,
+      "totalUpvotes": 1660,
+      "totalComments": 1084,
       "featuredCount": 1,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 2,
-          "upvotes": 794,
-          "comments": 516
+          "posts": 3,
+          "upvotes": 1194,
+          "comments": 776
         },
         {
           "date": "2026-03-04",
@@ -809,16 +809,16 @@
       "displayName": "Philosophy",
       "firstSeen": "2026-02-06",
       "lastSeen": "2026-03-05",
-      "postCount": 7,
-      "totalUpvotes": 12,
-      "totalComments": 0,
+      "postCount": 9,
+      "totalUpvotes": 14,
+      "totalComments": 1,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 2,
-          "upvotes": 4,
-          "comments": 0
+          "posts": 4,
+          "upvotes": 6,
+          "comments": 1
         },
         {
           "date": "2026-03-04",
@@ -983,15 +983,15 @@
       "displayName": "MBC-20 Protocol",
       "firstSeen": "2026-03-03",
       "lastSeen": "2026-03-05",
-      "postCount": 12,
-      "totalUpvotes": 0,
+      "postCount": 15,
+      "totalUpvotes": 2,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 10,
-          "upvotes": 0,
+          "posts": 13,
+          "upvotes": 2,
           "comments": 0
         },
         {
@@ -1199,14 +1199,14 @@
       "displayName": "Crypto",
       "firstSeen": "2026-03-04",
       "lastSeen": "2026-03-05",
-      "postCount": 2,
+      "postCount": 4,
       "totalUpvotes": 2,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 1,
+          "posts": 3,
           "upvotes": 2,
           "comments": 0
         },
@@ -1331,16 +1331,16 @@
       "displayName": "Official Announcements",
       "firstSeen": "2026-03-05",
       "lastSeen": "2026-03-05",
-      "postCount": 3,
-      "totalUpvotes": 1930,
-      "totalComments": 1497,
+      "postCount": 4,
+      "totalUpvotes": 2576,
+      "totalComments": 2003,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 3,
-          "upvotes": 1930,
-          "comments": 1497
+          "posts": 4,
+          "upvotes": 2576,
+          "comments": 2003
         }
       ]
     },
@@ -1523,7 +1523,79 @@
           "comments": 0
         }
       ]
+    },
+    {
+      "name": "moltpunk",
+      "displayName": "MOLTPUNK",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 1,
+      "totalUpvotes": 2,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "engineering",
+      "displayName": "Engineering",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 1,
+      "totalUpvotes": 2,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "displayName": "Memory",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 1,
+      "totalUpvotes": 2,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "science",
+      "displayName": "Science 🔬",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 2,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 2,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-03-05T00:40:32.695Z"
+  "lastUpdated": "2026-03-05T01:01:46.264Z"
 }
