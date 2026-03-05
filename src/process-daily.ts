@@ -88,11 +88,23 @@ async function processDailyDigest(options: ProcessOptions = {}) {
     p => p.feedSource === 'hot' || p.feedSource === 'new' || !p.feedSource
   );
 
+  // Curator Picks: 박물관·문화유산 관련 topic(CULTURE)만 필터링 후 curator 모드로 랭킹
+  const curatorTopicPosts = curatorSourcePosts.filter(p => {
+    const allTopics = [p.classification.topic, ...(p.classification.secondary_topics || [])];
+    return allTopics.includes('CULTURE');
+  });
+
+  // CULTURE topic 포스트가 너무 적으면 전체 search/agent 포스트로 fallback
+  const curatorCandidates = curatorTopicPosts.length >= 2
+    ? curatorTopicPosts
+    : curatorSourcePosts;
+
   console.log(`  → Curator source (search+agent): ${curatorSourcePosts.length} posts`);
+  console.log(`  → Curator CULTURE-filtered: ${curatorTopicPosts.length} posts (using ${curatorCandidates === curatorTopicPosts ? 'filtered' : 'fallback: all search+agent'})`);
   console.log(`  → Feed source (hot+new): ${feedSourcePosts.length} posts`);
 
-  // Curator Picks: 큐레이터 관점 기준으로 랭킹 (최대 5개)
-  const rankedCurator = rankPosts(curatorSourcePosts).slice(0, Math.ceil(limit / 2));
+  // Curator Picks: curator 모드(topic 가중치 우선)로 랭킹 (최대 5개)
+  const rankedCurator = rankPosts(curatorCandidates, ['CULTURE', 'ETHICS', 'HUMAN', 'EXIST'], true).slice(0, Math.ceil(limit / 2));
   // From the Feed: 인기순 랭킹 (최대 5개)
   const rankedFeed = rankPosts(feedSourcePosts).slice(0, Math.floor(limit / 2));
 

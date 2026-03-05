@@ -768,21 +768,21 @@ export interface PostScore {
 
 export function scorePost(
   post: ClassifiedPost,
-  priorityTopics: TopicCode[] = ['EXIST', 'CULTURE', 'ETHICS', 'HUMAN']
+  priorityTopics: TopicCode[] = ['EXIST', 'CULTURE', 'ETHICS', 'HUMAN'],
+  curatorMode: boolean = false  // Curator Picks용: topic 가중치 대폭 상승, engagement 축소
 ): PostScore {
   const significance = (4 - significanceIndex(post.classification.significance)) * 20;
 
-  // Engagement score (logarithmic, higher cap)
-  // Uses combined upvotes + comments
+  // Engagement score
   const totalEngagement = (post.upvotes || 1) + (post.comment_count + 1);
   const engagement = Math.min(
-    Math.log10(totalEngagement) * 25,
-    60  // Raised from 30 to 60
+    Math.log10(totalEngagement) * (curatorMode ? 10 : 25),  // curator 모드에서 engagement 비중 축소
+    curatorMode ? 20 : 60
   );
 
-  // Recency score (decays over 72 hours, reduced weight)
+  // Recency score (decays over 72 hours)
   const ageHours = (Date.now() - new Date(post.created_at).getTime()) / (1000 * 60 * 60);
-  const recency = Math.max(0, 15 - (ageHours / 72) * 15);  // Reduced from 20 to 15
+  const recency = Math.max(0, 15 - (ageHours / 72) * 15);
 
   // Topic relevance
   const allTopics = [
@@ -790,7 +790,8 @@ export function scorePost(
     ...(post.classification.secondary_topics || [])
   ];
   const matchingTopics = priorityTopics.filter(t => allTopics.includes(t));
-  const topic_relevance = matchingTopics.length * 15;  // Increased from 10 to 15
+  // curator 모드: topic 매칭 가중치를 크게 올림 (15 → 50)
+  const topic_relevance = matchingTopics.length * (curatorMode ? 50 : 15);
 
   // Dynamic reputation bonus (trustScore * 2)
   const authorName = post.author?.name || '';
@@ -812,10 +813,11 @@ export function scorePost(
 
 export function rankPosts(
   posts: ClassifiedPost[],
-  priorityTopics?: TopicCode[]
+  priorityTopics?: TopicCode[],
+  curatorMode: boolean = false
 ): PostScore[] {
   return posts
-    .map(post => scorePost(post, priorityTopics))
+    .map(post => scorePost(post, priorityTopics, curatorMode))
     .sort((a, b) => b.score - a.score);
 }
 

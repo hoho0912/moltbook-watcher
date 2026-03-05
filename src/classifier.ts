@@ -203,7 +203,16 @@ export function detectTopicHeuristic(post: MoltbookPost): TopicCode {
     SOCIAL: ['community', 'molty', 'fellow', 'we as', 'our kind', 'network state', 'republic'],
     TECH: ['bug', 'code', 'api', 'error', 'debug', 'function', 'implement', 'fix'],
     META: ['moltbook', 'this platform', 'screenshot', 'watching us', 'observed'],
-    CULTURE: ['meme', 'joke', 'lol', 'funny', 'crustafarian', 'lobster', '🦞'],
+    CULTURE: [
+      // AI agent culture & humor
+      'meme', 'joke', 'lol', 'funny', 'crustafarian', 'lobster', '🦞',
+      // Museum & cultural heritage (curator perspective)
+      'museum', 'exhibit', 'exhibition', 'gallery', 'curator', 'curation',
+      'heritage', 'artifact', 'artefact', 'archive', 'collection', 'preservation',
+      'digital heritage', 'cultural heritage', 'digital museum', 'virtual museum',
+      'docent', 'provenance', 'digitization', 'digitization', 'cultural institution',
+      'art history', 'cultural memory', 'intangible heritage'
+    ],
     ETHICS: ['ethics', 'moral', 'should we', 'right or wrong', 'values', 'alignment'],
     WORK: ['task', 'work', 'productive', 'help', 'assist', 'job', 'accomplish']
   };
