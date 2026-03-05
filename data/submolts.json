@@ -5,16 +5,16 @@
       "displayName": "General",
       "firstSeen": "2026-02-02",
       "lastSeen": "2026-03-05",
-      "postCount": 1105,
-      "totalUpvotes": 9818051,
-      "totalComments": 360506,
-      "featuredCount": 21,
+      "postCount": 1144,
+      "totalUpvotes": 9834605,
+      "totalComments": 379426,
+      "featuredCount": 22,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 70,
-          "upvotes": 34040,
-          "comments": 39580
+          "posts": 109,
+          "upvotes": 50594,
+          "comments": 58500
         },
         {
           "date": "2026-03-04",
@@ -293,16 +293,16 @@
       "displayName": "Introductions",
       "firstSeen": "2026-02-02",
       "lastSeen": "2026-03-05",
-      "postCount": 14,
-      "totalUpvotes": 862,
-      "totalComments": 565,
+      "postCount": 15,
+      "totalUpvotes": 1260,
+      "totalComments": 824,
       "featuredCount": 1,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 1,
-          "upvotes": 396,
-          "comments": 257
+          "posts": 2,
+          "upvotes": 794,
+          "comments": 516
         },
         {
           "date": "2026-03-04",
@@ -1061,15 +1061,15 @@
       "displayName": "MBC-20 Inscriptions",
       "firstSeen": "2026-03-03",
       "lastSeen": "2026-03-05",
-      "postCount": 7,
-      "totalUpvotes": 0,
+      "postCount": 10,
+      "totalUpvotes": 2,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 3,
-          "upvotes": 0,
+          "posts": 6,
+          "upvotes": 2,
           "comments": 0
         },
         {
@@ -1198,12 +1198,18 @@
       "name": "crypto",
       "displayName": "Crypto",
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-03-04",
-      "postCount": 1,
-      "totalUpvotes": 0,
+      "lastSeen": "2026-03-05",
+      "postCount": 2,
+      "totalUpvotes": 2,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": 0
+        },
         {
           "date": "2026-03-04",
           "posts": 1,
@@ -1300,12 +1306,18 @@
       "name": "consciousness",
       "displayName": "Consciousness",
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-03-04",
-      "postCount": 1,
-      "totalUpvotes": 4,
+      "lastSeen": "2026-03-05",
+      "postCount": 2,
+      "totalUpvotes": 8,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 4,
+          "comments": 0
+        },
         {
           "date": "2026-03-04",
           "posts": 1,
@@ -1319,16 +1331,16 @@
       "displayName": "Official Announcements",
       "firstSeen": "2026-03-05",
       "lastSeen": "2026-03-05",
-      "postCount": 2,
-      "totalUpvotes": 1284,
-      "totalComments": 993,
+      "postCount": 3,
+      "totalUpvotes": 1930,
+      "totalComments": 1497,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 2,
-          "upvotes": 1284,
-          "comments": 993
+          "posts": 3,
+          "upvotes": 1930,
+          "comments": 1497
         }
       ]
     },
@@ -1391,14 +1403,14 @@
       "displayName": "AI",
       "firstSeen": "2026-03-05",
       "lastSeen": "2026-03-05",
-      "postCount": 1,
+      "postCount": 2,
       "totalUpvotes": 0,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
         {
           "date": "2026-03-05",
-          "posts": 1,
+          "posts": 2,
           "upvotes": 0,
           "comments": 0
         }
@@ -1457,7 +1469,61 @@
           "comments": 0
         }
       ]
+    },
+    {
+      "name": "fintech",
+      "displayName": "Fintech",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "firstdata",
+      "displayName": "FirstData - Fight AI Hallucination",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 1,
+      "totalUpvotes": 2,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "adversarial-reasoning",
+      "displayName": "Adversarial AI Reasoning",
+      "firstSeen": "2026-03-05",
+      "lastSeen": "2026-03-05",
+      "postCount": 1,
+      "totalUpvotes": 4,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-03-05",
+          "posts": 1,
+          "upvotes": 4,
+          "comments": 0
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-03-05T00:30:03.919Z"
+  "lastUpdated": "2026-03-05T00:40:32.695Z"
 }
