@@ -116,9 +116,19 @@ export function parseClassificationResponse(
       return null;
     }
 
+    // Validate TopicCode is one of the known values
+    const validTopicCodes: TopicCode[] = ['EXIST', 'HUMAN', 'SOCIAL', 'TECH', 'META', 'CULTURE', 'ETHICS', 'WORK'];
+    const topic: TopicCode = validTopicCodes.includes(parsed.topic as TopicCode)
+      ? (parsed.topic as TopicCode)
+      : 'SOCIAL'; // fallback to SOCIAL if unknown code
+
+    const secondary_topics = (parsed.secondary_topics as string[] | undefined)
+      ?.filter((t: string) => validTopicCodes.includes(t as TopicCode))
+      .map((t: string) => t as TopicCode);
+
     return {
-      topic: parsed.topic as TopicCode,
-      secondary_topics: parsed.secondary_topics as TopicCode[] | undefined,
+      topic,
+      secondary_topics,
       significance: parsed.significance as SignificanceLevel,
       sentiments: parsed.sentiments as SentimentTag[],
       summary: parsed.summary || '',
