@@ -44,10 +44,24 @@ async function runCollect() {
 
   // Keyword search: museum/cultural tech perspective
   const searchKeywords = [
+    // 기존
     'museum digital',
     'cultural heritage AI',
     'digital docent',
-    'exhibition technology'
+    'exhibition technology',
+    // 확장: 단어 단위 / 더 넓은 범위
+    'museum',
+    'exhibition',
+    'digital art',
+    'cultural heritage',
+    'AI art',
+    'creative AI',
+    'generative art',
+    'digital preservation',
+    'art institution',
+    'immersive experience',
+    'new media art',
+    'interactive installation'
   ];
   const searchResults: typeof hot.posts = [];
   for (const keyword of searchKeywords) {
