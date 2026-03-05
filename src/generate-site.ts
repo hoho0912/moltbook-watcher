@@ -1055,10 +1055,12 @@ function generateSubmoltsHtml(): string {
       </a>
       <nav>
         <a href="index.html">Home</a>
+        <a href="index.html#archive">Archive</a>
         <a href="agents.html">Agents</a>
         <a href="submolts.html">Submolts</a>
         <a href="weekly/">Weekly</a>
         <a href="about.html">About</a>
+        <a href="https://github.com/hoho0912/moltbook-watcher" target="_blank">GitHub</a>
       </nav>
     </div>
   </header>
@@ -1309,10 +1311,12 @@ function generateWeeklyHtml(markdown: string): string {
       </a>
       <nav>
         <a href="../index.html">Home</a>
+        <a href="../index.html#archive">Archive</a>
         <a href="../agents.html">Agents</a>
         <a href="../submolts.html">Submolts</a>
         <a href="./weekly-${weekEnd}.html" class="active">Weekly</a>
         <a href="../about.html">About</a>
+        <a href="https://github.com/hoho0912/moltbook-watcher" target="_blank">GitHub</a>
       </nav>
     </div>
   </header>
@@ -1458,10 +1462,12 @@ async function generateSite() {
       </a>
       <nav>
         <a href="../index.html">Home</a>
+        <a href="../index.html#archive">Archive</a>
         <a href="../agents.html">Agents</a>
         <a href="../submolts.html">Submolts</a>
         <a href="./" class="active">Weekly</a>
         <a href="../about.html">About</a>
+        <a href="https://github.com/hoho0912/moltbook-watcher" target="_blank">GitHub</a>
       </nav>
     </div>
   </header>

@@ -67,7 +67,18 @@ function parseDigestMarkdown(filePath: string, date: string): DailyDigestData {
   while (i < lines.length) {
     const line = lines[i];
 
-    // Section markers
+    // Section markers (new naming)
+    if (line.includes('## 🎨 Curator Picks') || line.includes('Curator Picks') && line.startsWith('##')) {
+      currentSection = 'fresh';
+      i++;
+      continue;
+    }
+    if (line.includes('## 🔥 From the Feed') || (line.includes('From the Feed') && line.startsWith('##'))) {
+      currentSection = 'trending';
+      i++;
+      continue;
+    }
+    // Legacy section markers (backward compat)
     if (line.includes('## 🆕 Fresh Today')) {
       currentSection = 'fresh';
       i++;
@@ -270,8 +281,8 @@ function generateWeeklyReport(
   lines.push('## 📊 Week at a Glance');
   lines.push('');
   lines.push(`- **Total Posts Featured**: ${stats.totalPosts}`);
-  lines.push(`- **Fresh Posts**: ${stats.freshPosts} (${((stats.freshPosts / stats.totalPosts) * 100).toFixed(1)}%)`);
-  lines.push(`- **Trending Posts**: ${stats.trendingPosts} (${((stats.trendingPosts / stats.totalPosts) * 100).toFixed(1)}%)`);
+  lines.push(`- **Curator Picks**: ${stats.freshPosts} (${((stats.freshPosts / stats.totalPosts) * 100).toFixed(1)}%)`);
+  lines.push(`- **From the Feed**: ${stats.trendingPosts} (${((stats.trendingPosts / stats.totalPosts) * 100).toFixed(1)}%)`);
   lines.push(`- **Average Upvotes**: ${stats.avgUpvotes.toFixed(1)}`);
   lines.push(`- **Average Comments**: ${stats.avgComments.toFixed(1)}`);
   lines.push('');
