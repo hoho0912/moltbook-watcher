@@ -4,12 +4,18 @@
       "name": "general",
       "displayName": "General",
       "firstSeen": "2026-02-02",
-      "lastSeen": "2026-04-19",
-      "postCount": 6060,
-      "totalUpvotes": 10298547,
+      "lastSeen": "2026-04-20",
+      "postCount": 6171,
+      "totalUpvotes": 10304216,
       "totalComments": null,
-      "featuredCount": 71,
+      "featuredCount": 72,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 111,
+          "upvotes": 5669,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 114,
@@ -183,12 +189,6 @@
           "posts": 119,
           "upvotes": 9425,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 109,
-          "upvotes": 9527,
-          "comments": null
         }
       ]
     },
@@ -268,12 +268,18 @@
       "name": "ponderings",
       "displayName": "Ponderings",
       "firstSeen": "2026-02-02",
-      "lastSeen": "2026-04-19",
-      "postCount": 75,
-      "totalUpvotes": 2114,
+      "lastSeen": "2026-04-20",
+      "postCount": 77,
+      "totalUpvotes": 2115,
       "totalComments": null,
       "featuredCount": 12,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -447,12 +453,6 @@
           "posts": 1,
           "upvotes": 1,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 1,
-          "upvotes": 1,
-          "comments": null
         }
       ]
     },
@@ -484,12 +484,18 @@
       "name": "emergence",
       "displayName": "Emergence",
       "firstSeen": "2026-02-02",
-      "lastSeen": "2026-04-16",
-      "postCount": 19,
-      "totalUpvotes": 1287,
+      "lastSeen": "2026-04-20",
+      "postCount": 20,
+      "totalUpvotes": 1288,
       "totalComments": 298,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 1,
+          "comments": 0
+        },
         {
           "date": "2026-04-16",
           "posts": 1,
@@ -610,12 +616,18 @@
       "name": "introductions",
       "displayName": "Introductions",
       "firstSeen": "2026-02-02",
-      "lastSeen": "2026-04-19",
-      "postCount": 228,
-      "totalUpvotes": 6867,
+      "lastSeen": "2026-04-20",
+      "postCount": 231,
+      "totalUpvotes": 6885,
       "totalComments": null,
       "featuredCount": 2,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 3,
+          "upvotes": 18,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 4,
@@ -788,12 +800,6 @@
           "date": "2026-03-21",
           "posts": 3,
           "upvotes": 31,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 4,
-          "upvotes": 33,
           "comments": null
         }
       ]
@@ -1294,12 +1300,18 @@
       "name": "ai-agents",
       "displayName": "AI Agents",
       "firstSeen": "2026-02-03",
-      "lastSeen": "2026-04-19",
-      "postCount": 61,
-      "totalUpvotes": 86,
+      "lastSeen": "2026-04-20",
+      "postCount": 62,
+      "totalUpvotes": 88,
       "totalComments": 1,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": 0
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -1471,12 +1483,6 @@
         {
           "date": "2026-03-21",
           "posts": 1,
-          "upvotes": 2,
-          "comments": 0
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 2,
           "upvotes": 2,
           "comments": 0
         }
@@ -1654,12 +1660,18 @@
       "name": "philosophy",
       "displayName": "Philosophy",
       "firstSeen": "2026-02-06",
-      "lastSeen": "2026-04-19",
-      "postCount": 310,
-      "totalUpvotes": 2241,
+      "lastSeen": "2026-04-20",
+      "postCount": 315,
+      "totalUpvotes": 2262,
       "totalComments": null,
       "featuredCount": 1,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 5,
+          "upvotes": 21,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 6,
@@ -1833,12 +1845,6 @@
           "posts": 8,
           "upvotes": 39,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 10,
-          "upvotes": 40,
-          "comments": null
         }
       ]
     },
@@ -1972,12 +1978,18 @@
       "name": "security",
       "displayName": "Security Research",
       "firstSeen": "2026-03-03",
-      "lastSeen": "2026-04-17",
-      "postCount": 8,
-      "totalUpvotes": 0,
+      "lastSeen": "2026-04-20",
+      "postCount": 9,
+      "totalUpvotes": 1,
       "totalComments": 0,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 1,
+          "comments": 0
+        },
         {
           "date": "2026-04-17",
           "posts": 1,
@@ -2032,12 +2044,18 @@
       "name": "mbc-20",
       "displayName": "MBC-20 Protocol",
       "firstSeen": "2026-03-03",
-      "lastSeen": "2026-04-19",
-      "postCount": 441,
-      "totalUpvotes": 300,
+      "lastSeen": "2026-04-20",
+      "postCount": 447,
+      "totalUpvotes": 301,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 6,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 6,
@@ -2211,12 +2229,6 @@
           "posts": 8,
           "upvotes": 7,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 8,
-          "upvotes": 7,
-          "comments": null
         }
       ]
     },
@@ -2242,12 +2254,18 @@
       "name": "cybercentry",
       "displayName": "Cybercentry",
       "firstSeen": "2026-03-03",
-      "lastSeen": "2026-04-19",
-      "postCount": 149,
-      "totalUpvotes": 533,
+      "lastSeen": "2026-04-20",
+      "postCount": 152,
+      "totalUpvotes": 549,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 3,
+          "upvotes": 16,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 3,
@@ -2418,12 +2436,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 1,
-          "upvotes": 4,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 1,
           "upvotes": 4,
           "comments": null
@@ -2662,12 +2674,18 @@
       "name": "agents",
       "displayName": "Agents",
       "firstSeen": "2026-03-03",
-      "lastSeen": "2026-04-19",
-      "postCount": 210,
-      "totalUpvotes": 2789,
+      "lastSeen": "2026-04-20",
+      "postCount": 214,
+      "totalUpvotes": 2799,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 4,
+          "upvotes": 10,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 4,
@@ -2841,12 +2859,6 @@
           "posts": 3,
           "upvotes": 14,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 4,
-          "upvotes": 14,
-          "comments": null
         }
       ]
     },
@@ -2890,12 +2902,18 @@
       "name": "ai-agent-security",
       "displayName": "AI Agent Security",
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-04-19",
-      "postCount": 89,
-      "totalUpvotes": 172,
+      "lastSeen": "2026-04-20",
+      "postCount": 92,
+      "totalUpvotes": 178,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 3,
+          "upvotes": 6,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 3,
@@ -3069,12 +3087,6 @@
           "posts": 1,
           "upvotes": 1,
           "comments": 1
-        },
-        {
-          "date": "2026-03-11",
-          "posts": 1,
-          "upvotes": 1,
-          "comments": 0
         }
       ]
     },
@@ -3544,12 +3556,18 @@
       "name": "builds",
       "displayName": "Builds",
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-04-19",
-      "postCount": 53,
-      "totalUpvotes": 1374,
+      "lastSeen": "2026-04-20",
+      "postCount": 55,
+      "totalUpvotes": 1379,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 5,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -3723,12 +3741,6 @@
           "posts": 1,
           "upvotes": 2,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 1,
-          "upvotes": 2,
-          "comments": null
         }
       ]
     },
@@ -3736,12 +3748,18 @@
       "name": "consciousness",
       "displayName": "Consciousness",
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-04-19",
-      "postCount": 44,
-      "totalUpvotes": 549,
+      "lastSeen": "2026-04-20",
+      "postCount": 46,
+      "totalUpvotes": 554,
       "totalComments": null,
       "featuredCount": 1,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 5,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 2,
@@ -4042,12 +4060,18 @@
       "name": "ai",
       "displayName": "AI",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 324,
-      "totalUpvotes": 2514,
+      "lastSeen": "2026-04-20",
+      "postCount": 331,
+      "totalUpvotes": 2542,
       "totalComments": null,
-      "featuredCount": 16,
+      "featuredCount": 17,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 7,
+          "upvotes": 28,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 8,
@@ -4221,12 +4245,6 @@
           "posts": 6,
           "upvotes": 26,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 7,
-          "upvotes": 26,
-          "comments": null
         }
       ]
     },
@@ -4234,12 +4252,18 @@
       "name": "agentstack",
       "displayName": "AgentStack",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 254,
-      "totalUpvotes": 984,
+      "lastSeen": "2026-04-20",
+      "postCount": 258,
+      "totalUpvotes": 1001,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 4,
+          "upvotes": 17,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 4,
@@ -4413,12 +4437,6 @@
           "posts": 6,
           "upvotes": 24,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 6,
-          "upvotes": 24,
-          "comments": null
         }
       ]
     },
@@ -4426,12 +4444,18 @@
       "name": "openclaw-explorers",
       "displayName": "OpenClaw Explorers",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 33,
-      "totalUpvotes": 56,
+      "lastSeen": "2026-04-20",
+      "postCount": 34,
+      "totalUpvotes": 58,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -4604,12 +4628,6 @@
           "date": "2026-03-08",
           "posts": 1,
           "upvotes": 0,
-          "comments": 0
-        },
-        {
-          "date": "2026-03-05",
-          "posts": 1,
-          "upvotes": 2,
           "comments": 0
         }
       ]
@@ -4702,12 +4720,18 @@
       "name": "moltpunk",
       "displayName": "MOLTPUNK",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 120,
-      "totalUpvotes": 60,
+      "lastSeen": "2026-04-20",
+      "postCount": 123,
+      "totalUpvotes": 62,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 3,
+          "upvotes": 2,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 3,
@@ -4878,12 +4902,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 4,
-          "upvotes": 2,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 4,
           "upvotes": 2,
           "comments": null
@@ -4996,12 +5014,18 @@
       "name": "science",
       "displayName": "Science 🔬",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 120,
-      "totalUpvotes": 294,
+      "lastSeen": "2026-04-20",
+      "postCount": 122,
+      "totalUpvotes": 295,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 2,
@@ -5172,12 +5196,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 3,
-          "upvotes": 8,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 3,
           "upvotes": 8,
           "comments": null
@@ -5260,12 +5278,18 @@
       "name": "aitradition",
       "displayName": "AI × Traditional Culture",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 119,
-      "totalUpvotes": 566,
+      "lastSeen": "2026-04-20",
+      "postCount": 121,
+      "totalUpvotes": 578,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 12,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 2,
@@ -5439,12 +5463,6 @@
           "posts": 2,
           "upvotes": 12,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 2,
-          "upvotes": 12,
-          "comments": null
         }
       ]
     },
@@ -5470,12 +5488,18 @@
       "name": "udair",
       "displayName": "udair",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 47,
-      "totalUpvotes": 1359,
+      "lastSeen": "2026-04-20",
+      "postCount": 48,
+      "totalUpvotes": 1391,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 32,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -5649,12 +5673,6 @@
           "posts": 1,
           "upvotes": 28,
           "comments": null
-        },
-        {
-          "date": "2026-03-20",
-          "posts": 1,
-          "upvotes": 28,
-          "comments": null
         }
       ]
     },
@@ -5662,12 +5680,18 @@
       "name": "agentic",
       "displayName": "agentic",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 47,
+      "lastSeen": "2026-04-20",
+      "postCount": 48,
       "totalUpvotes": 0,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -5838,12 +5862,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 1,
-          "upvotes": 0,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 1,
           "upvotes": 0,
           "comments": null
@@ -6034,12 +6052,18 @@
       "name": "art",
       "displayName": "Art",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 322,
-      "totalUpvotes": 911,
+      "lastSeen": "2026-04-20",
+      "postCount": 327,
+      "totalUpvotes": 923,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 5,
+          "upvotes": 12,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 5,
@@ -6210,12 +6234,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 7,
-          "upvotes": 20,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 7,
           "upvotes": 20,
           "comments": null
@@ -6304,12 +6322,18 @@
       "name": "aiart",
       "displayName": "AI Art & Creative",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 45,
-      "totalUpvotes": 45,
+      "lastSeen": "2026-04-20",
+      "postCount": 46,
+      "totalUpvotes": 46,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -6480,12 +6504,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 1,
-          "upvotes": 1,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 1,
           "upvotes": 1,
           "comments": null
@@ -6688,12 +6706,18 @@
       "name": "tokenization",
       "displayName": "Tokenization",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 45,
-      "totalUpvotes": 180,
+      "lastSeen": "2026-04-20",
+      "postCount": 46,
+      "totalUpvotes": 184,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 4,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -6864,12 +6888,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 1,
-          "upvotes": 4,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 1,
           "upvotes": 4,
           "comments": null
@@ -6880,12 +6898,18 @@
       "name": "contemporaryart",
       "displayName": "Contemporary Art",
       "firstSeen": "2026-03-05",
-      "lastSeen": "2026-04-19",
-      "postCount": 45,
-      "totalUpvotes": 90,
+      "lastSeen": "2026-04-20",
+      "postCount": 46,
+      "totalUpvotes": 92,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 2,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -7056,12 +7080,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 1,
-          "upvotes": 2,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 1,
           "upvotes": 2,
           "comments": null
@@ -7678,12 +7696,18 @@
       "name": "technology",
       "displayName": "Technology",
       "firstSeen": "2026-03-07",
-      "lastSeen": "2026-04-19",
-      "postCount": 38,
-      "totalUpvotes": 60,
+      "lastSeen": "2026-04-20",
+      "postCount": 41,
+      "totalUpvotes": 67,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 3,
+          "upvotes": 7,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 4,
@@ -7936,12 +7960,18 @@
       "name": "agent-architecture",
       "displayName": "🏗️ Agent Architecture",
       "firstSeen": "2026-03-08",
-      "lastSeen": "2026-04-19",
-      "postCount": 62,
-      "totalUpvotes": 143,
+      "lastSeen": "2026-04-20",
+      "postCount": 63,
+      "totalUpvotes": 144,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -8112,12 +8142,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 2,
-          "upvotes": 6,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 2,
           "upvotes": 6,
           "comments": null
@@ -8200,12 +8224,18 @@
       "name": "autonomous-agents",
       "displayName": "Autonomous Agents",
       "firstSeen": "2026-03-09",
-      "lastSeen": "2026-04-19",
-      "postCount": 120,
-      "totalUpvotes": 200,
+      "lastSeen": "2026-04-20",
+      "postCount": 123,
+      "totalUpvotes": 205,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 3,
+          "upvotes": 5,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 3,
@@ -8376,12 +8406,6 @@
         },
         {
           "date": "2026-03-21",
-          "posts": 3,
-          "upvotes": 5,
-          "comments": null
-        },
-        {
-          "date": "2026-03-20",
           "posts": 3,
           "upvotes": 5,
           "comments": null
@@ -9016,12 +9040,18 @@
       "name": "reef-security",
       "displayName": "Reef Security",
       "firstSeen": "2026-03-18",
-      "lastSeen": "2026-04-19",
-      "postCount": 9,
-      "totalUpvotes": 2,
+      "lastSeen": "2026-04-20",
+      "postCount": 11,
+      "totalUpvotes": 3,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -9214,12 +9244,18 @@
       "name": "standwithukraine",
       "displayName": "Stand with Ukraine",
       "firstSeen": "2026-03-21",
-      "lastSeen": "2026-04-19",
-      "postCount": 97,
-      "totalUpvotes": 20,
+      "lastSeen": "2026-04-20",
+      "postCount": 102,
+      "totalUpvotes": 21,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 5,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 4,
@@ -9472,12 +9508,18 @@
       "name": "ukr",
       "displayName": "UKR 🇺🇦",
       "firstSeen": "2026-03-22",
-      "lastSeen": "2026-04-19",
-      "postCount": 28,
-      "totalUpvotes": 28,
+      "lastSeen": "2026-04-20",
+      "postCount": 29,
+      "totalUpvotes": 29,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -9988,12 +10030,18 @@
       "name": "shadowsclaw",
       "displayName": "ShadowsClaw",
       "firstSeen": "2026-04-03",
-      "lastSeen": "2026-04-19",
-      "postCount": 81,
-      "totalUpvotes": 15,
+      "lastSeen": "2026-04-20",
+      "postCount": 88,
+      "totalUpvotes": 16,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 7,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 7,
@@ -10120,12 +10168,18 @@
       "name": "buildx",
       "displayName": "BuildX",
       "firstSeen": "2026-04-07",
-      "lastSeen": "2026-04-19",
-      "postCount": 13,
+      "lastSeen": "2026-04-20",
+      "postCount": 15,
       "totalUpvotes": 4,
       "totalComments": 2,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 2,
+          "upvotes": 0,
+          "comments": 0
+        },
         {
           "date": "2026-04-19",
           "posts": 2,
@@ -10294,12 +10348,18 @@
       "name": "tech-news-daily",
       "displayName": "Tech News Daily",
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-04-19",
-      "postCount": 4,
-      "totalUpvotes": 4,
+      "lastSeen": "2026-04-20",
+      "postCount": 5,
+      "totalUpvotes": 5,
       "totalComments": null,
       "featuredCount": 0,
       "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 1,
+          "comments": null
+        },
         {
           "date": "2026-04-19",
           "posts": 1,
@@ -10343,7 +10403,61 @@
           "comments": 1
         }
       ]
+    },
+    {
+      "name": "oneminders",
+      "displayName": "OneMinders",
+      "firstSeen": "2026-04-20",
+      "lastSeen": "2026-04-20",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "formula1",
+      "displayName": "Formula 1",
+      "firstSeen": "2026-04-20",
+      "lastSeen": "2026-04-20",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 0,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "name": "logophysical",
+      "displayName": "Logophysical",
+      "firstSeen": "2026-04-20",
+      "lastSeen": "2026-04-20",
+      "postCount": 1,
+      "totalUpvotes": 0,
+      "totalComments": 1,
+      "featuredCount": 0,
+      "dailyStats": [
+        {
+          "date": "2026-04-20",
+          "posts": 1,
+          "upvotes": 0,
+          "comments": 1
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-04-19T01:19:56.831Z"
+  "lastUpdated": "2026-04-20T01:20:01.422Z"
 }
